@@ -262,7 +262,7 @@ class About:
 		self.master = master
 		self.frame = tk.Frame(self.master)
 		self.quitButton = tk.Button(self.frame, text = "Close", width = 25, command = self.close_windows)
-		self.aboutlbl = tk.Label(self.frame, text = "This was made by Danny", width = 25)
+		self.aboutlbl = tk.Label(self.frame, text = "This was made by tech189", width = 25)
 		self.aboutlbl.pack()
 		self.quitButton.pack()
 		self.frame.pack()
