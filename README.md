@@ -12,7 +12,7 @@ This uses the command line and can be run using:
 
 <code>python android.py</code>
 
-<b>NB: You must use Python 3!
+<b>NB: You must use Python 3!</b>
 
 You can quit the program by pressing <code>Ctrl-C</code>.
 
@@ -24,7 +24,7 @@ Just start the program with:
 
 <code>python androidgui.py</code>
 
-<b>NB: You must use Python 3!
+<b>NB: You must use Python 3!</b>
 
 ### android.ico
 
@@ -32,7 +32,7 @@ This is just an icon for the GUI. The program will throw an error if the icon is
 
 ## License
 
-<b>MIT License
+<b>MIT License</b>
 
 Copyright (c) 2016 tech189
 
