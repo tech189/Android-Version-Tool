@@ -1,4 +1,5 @@
 #a dictionary containing all info about each version
+#data taken from https://en.wikipedia.org/wiki/Android_version_history
 version = {
 		"1.0": ["Alpha", "September 23, 2008", [], "1"],
 		"1.1": ["Beta", "February 9, 2009", [], "2"],
@@ -53,7 +54,9 @@ version = {
 		"5.1.1": ["Lollipop", ],
 		"6.0": ["Marshmallow", "October 5, 2015", ["6.0.1"], "23"],
 		"6.0.1": ["Marshmallow", "December 7, 2015", [], "23"],
-		"7.0": ["Nougat", "Not yet released", [], "24"]
+		"7.0": ["Nougat", "August 22, 2016", ["7.1", "7.1.1"], "24-25"],
+		"7.1": ["Nougat", "October 4, 2016", ["7.1.1"], "25"],
+		"7.1.1": ["Nougat", "not yet released", [], "25"]
 		}
 
 #initialising the input variables
