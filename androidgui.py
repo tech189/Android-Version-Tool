@@ -105,7 +105,6 @@ class Application:
 		self.n.add(self.f4, text="API level")
 
 		#labels to help the user
-<<<<<<< HEAD
 		self.lbl1 = tk.Label(self.f1, text="Look up the code name of an Android version:")
 		self.lbl2 = tk.Label(self.f2, text="Find when an Android version was released:")
 		self.lbl3 = tk.Label(self.f3, text="Look up the minor releases of an Android version:")
@@ -126,7 +125,6 @@ class Application:
 		#a special section on frame 3: a checkbox to show more info
 		self.chkvar = tk.IntVar()
 		self.chk = tk.Checkbutton(self.f3, text="Show minor releases", variable=self.chkvar)
-=======
 		self.lbl1 = ttk.Label(self.f1, text="Look up the code name of an Android version:")
 		self.lbl2 = ttk.Label(self.f2, text="Find when an Android version was released:")
 		self.lbl3 = ttk.Label(self.f3, text="Look up the minor releases of an Android version:")
@@ -147,7 +145,6 @@ class Application:
 		#a special section on frame 3: a checkbox to show more info
 		self.chkvar = tk.IntVar()
 		self.chk = ttk.Checkbutton(self.f3, text="Show minor releases", variable=self.chkvar)
->>>>>>> origin/master
 		self.chkans = tk.Label(self.f3, text="")
 
 		#adding the items to the gui
@@ -184,11 +181,7 @@ class Application:
 			self.newWindow = tk.Toplevel(self.master)
 			self.app = Help(self.newWindow)
 
-<<<<<<< HEAD
-		#copys the text from the anser labels to the clipboard
-=======
-		#copys the text from the answer labels to the clipboard
->>>>>>> origin/master
+		#copies the text from the answer labels to the clipboard
 		def copy_text():
 			if self.n.index(self.n.select()) == 0:
 				master.clipboard_clear()
@@ -286,21 +279,14 @@ class Application:
 		#when the enter key is pressed, on_return is run
 		master.bind('<Return>', on_return)
 
-#to create an about window
-<<<<<<< HEAD
-=======
 #TODO make this a bit nicer
->>>>>>> origin/master
 class About:
 	def __init__(self, master):
 		self.master = master
 		master.wm_iconbitmap("info.ico")
 		self.frame = tk.Frame(self.master)
-<<<<<<< HEAD
 		self.quitButton = tk.Button(self.frame, text = "Close", width = 25, command = self.close_windows)
-=======
 		self.quitButton = ttk.Button(self.frame, text = "Close", width = 25, command = self.close_windows)
->>>>>>> origin/master
 		self.aboutlbl = tk.Label(self.frame, text = "This was made by tech189", width = 25)
 		self.aboutlbl.pack()
 		self.quitButton.pack()
@@ -317,11 +303,8 @@ class Help:
 		master.title("Help")
 		master.wm_iconbitmap("help.ico")
 		self.frame = tk.Frame(self.master)
-<<<<<<< HEAD
 		self.quitButton = tk.Button(self.frame, text = "Close", width = 25, command = self.close_windows)
-=======
 		self.quitButton = ttk.Button(self.frame, text = "Close", width = 25, command = self.close_windows)
->>>>>>> origin/master
 		self.helplbl = tk.Label(self.frame, text = "Here is a list of Android versions which you can try:\n1.0 , 1.1, 1.5, 1.6,\n2.0, 2.0.1, 2.1 , 2.2, 2.2.1, 2.2.2, 2.2.3, 2.3, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.3.6, 2.3.7, \n3.0, 3.1, 3.2, 3.2.1, 3.2.2, 3.2.3, 3.2.4, 3.2.5, 3.2.6,\n4.0, 4.0.1, 4.0.2, 4.0.3, 4.0.4, 4.1, 4.1.1, 4.1.2, 4.2, 4.2.1, 4.2.2, 4.3, 4.3.1, 4.4, 4.4.1, 4.4.2, 4.4.3, 4.4.4,\n5.0, 5.0.1, 5.0.2, 5.1, 5.1.1,\n6.0, 6.0.1, \n7.0", justify="left")
 		self.helplbl.pack()
 		self.quitButton.pack()
